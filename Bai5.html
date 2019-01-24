@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+    <script>
+        function findMin(numb1 , numb2 , numb3) {
+            let min = numb1 ;
+            if (min > numb2){
+                min = numb2;
+            }else if (min > numb3) {
+                min = numb3;
+            }
+            return min;
+        }
+    </script>
+</head>
+<body>
+<script>
+    let numb1 = parseInt(prompt("Mời bạn nhập vào number 1:"));
+    let numb2 = parseInt(prompt("Mời bạn nhập vào number 2:"));
+    let numb3 = parseInt(prompt("Mời bạn nhập vào number 3:"));
+    alert("Min của 3 số bạn vừa nhập là : " + findMin(numb1, numb2 , numb3));
+
+</script>
+</body>
+</html>
