@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+    <script>
+        function swap(numb1, numb2) {
+            let arr = [numb1 , numb2];
+            let temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+            return arr;
+        }
+    </script>
+</head>
+<body>
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất ký, thực hiện đổi chỗ hai số nguyên đó.-->
+<script>
+    let numb1 = parseInt(prompt("Number 1 = "));
+    let numb2 = parseInt(prompt("Number 2 = "));
+    let a = swap(numb1,numb2)[0];
+    let b = swap(numb1 , numb2)[1];
+    alert("Number 1 = " + a);
+    alert("Number 2 = " + b);
+
+</script>
+</body>
+
+</html>
