@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+    <script>
+        function demGiaTriMang(arr, value) {
+            let dem = 0;
+            for (let i = 0; i< arr.length; i++){
+                if (value == arr[i]){
+                    dem++;
+                }
+            }
+            if (dem == 0) {
+                return -1;
+            }else {
+                return dem;
+            }
+        }
+    </script>
+</head>
+<body>
+<!--Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. -->
+<script>
+    let arr = [];
+    for (let i = 0 ; i <= arr.length ; i++) {
+        let value = prompt("arr[" + i+"] =");
+        arr[i] = value;
+        if (confirm("Bạn có muốn nhập tiếp không?")!= true) {
+            break;
+        }
+    }
+    let value = prompt("nhập vào kí tự bất kì để kiểm tra");
+    let soLan = demGiaTriMang(arr , value);
+    if (soLan == -1){
+        alert("Không xuất hiện");
+    } else {
+        alert("Số lần xuất hiện " + value +  " trong mảng là : " + soLan);
+    }
+</script>
+</body>
+</html>
