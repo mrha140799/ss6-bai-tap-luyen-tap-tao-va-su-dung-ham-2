@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym</title>
+    <script>
+        function checkLower(value) {
+            if (value.toLowerCase() == value){
+                return true;
+            }else {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<!--Bài 6: Viết hàm nhận vào một ký tự trong bảng chữ cái [a-z][A-Z], kiểm tra xem nếu ký tự đưa vào có phải là nguyên âm không.
+Nếu là nguyên âm trả về true, ngược lại trả về false.-->
+<script>
+    let value = prompt("Nhập vào 1 kí tự bất kì");
+    if (checkLower(value)) {
+        alert("là chữ in thường");
+    }else {
+        alert("là chữ in hoa");
+    }
+</script>
+</body>
+</html>
